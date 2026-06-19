@@ -10,9 +10,7 @@ async function aiResponseController(req, res) {
 
     const response = await generateAiResponse(code);
 
-    res.status(200).json({
-        response
-    })
+    res.send(response)
 }
 
 module.exports = {
